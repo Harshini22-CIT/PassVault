@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Log Book</title>
+  <link rel="stylesheet" href="../static/style.css" />
+</head>
+<style>
+  #logoutButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 8px 16px;
+    background-color: #06b6d4;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+</style>
+<body>
+  <header>
+     
+      <button type="click" id="logoutButton">Logout</button>
+    
+  </header>
+  <h1>Log Book</h1>
+
+  <form id="logForm">
+    Website Name:<input type="text" id="website" placeholder="Enter website name" required />
+    Username:<input type="text" id="user" placeholder="Enter user" required />
+    Password:<input type="text" id="password" placeholder="Enter pass" required />
+    
+    <button type="submit">Add Log</button>
+  </form>
+
+  <h2>Your Logs</h2>
+  <div id="logs">
+  <button type="submit" id="loadLogsButton" onclick="loadUserLogs()">
+    Your log
+  </button>
+  
+</div>
+
+  
+  <script src="../static/indexscript.js"></script>
+</body>
+</html>

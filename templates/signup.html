@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <title>Signup page</title>
+    <style>
+        body {
+        margin: 25px;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(#E4F3E3, #5CA9E9);
+  background-size: 400% 400%;
+  animation: gradientShift 18s ease infinite;
+  text-align: center;
+        }
+        table {
+            margin: 0 auto;
+        }
+        input {
+            margin: 10px;
+            padding: 8px;
+            width: 200px;
+        }
+        button {
+            padding: 10px 20px;
+            background: linear-gradient(135deg, #0093E9, #80D0C7);
+            color: white;
+            border: none;
+            cursor: pointer;            
+        }
+          
+        p{
+            text-align: right;
+            margin-top: 15px; 
+            margin-bottom: 30px;
+        } 
+        .nav-buttons a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: deep teal;
+            font-weight: bold;
+        }
+    </style>
+    <header>
+        <div class="nav-buttons">
+            <p>
+                <a href="{{ url_for('target_page', name='login' )}}">Go to your Login page</a>
+            </p>
+        </div>
+    </header>
+    <body>
+        <h1>Signup to the Log Book App</h1>
+        <form id="signupForm">
+        <table>
+            <tr>
+                <td>Username: <input type="name" placeholder="username" id="username"></td>
+            </tr>
+            <tr>
+                <td>Password: <input type="password" placeholder="password" id="password"></td>
+            </tr>
+            <tr>
+                <td>Confirm Password: <input type="password" placeholder="confirm password" id="confirm-password"></td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit">Create Account</button>
+                </td>
+            </tr>
+            
+            
+                
+            
+        </table>
+        </form>
+        <script src="../static/signupscript2.js"></script>
+    </body>
+</html>

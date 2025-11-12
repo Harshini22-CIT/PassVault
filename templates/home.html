@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home page</title>
+    </head>
+    <style>
+        h1{
+            text-align: center;
+        }
+        body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(#E4F3E3, #5CA9E9);
+  background-size: 400% 400%;
+  animation: gradientShift 18s ease infinite;
+  text-align: justify;
+  }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: lightgray;
+            color: white;
+            border: none;
+            cursor: pointer;
+            justify-content: right;
+        }
+        button:hover {
+            background-color: lightskyblue;
+        }
+        .nav-buttons a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: deep teal;
+            font-weight: bold;
+            text-align: right;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        p{
+            font-size: 20px;
+        }
+        h3{
+            text-align: center;
+            font-size: 25px;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+    <body>
+    <header class="main-header">
+        <h1>Log Book App</h1>
+        <!-- <div class="logo"><h1>Log Book App</h1></div> -->
+        <div class="nav-buttons">
+        
+            <p>
+                <a href="{{ url_for('target_page', name='signup' )}}">
+                Signup
+                </a>
+                <a href="{{ url_for('target_page', name='login' )}}">
+                Login
+                </a>
+            </p>
+        </div>
+     
+    </header>
+    <hr class="header-divider">
+        
+        <h3>Welcome to Log book App</h3>
+        <p>🔐 About LogBook</p>
+
+        <p>LogBook is a simple and secure password management app designed to help you safely store all your website credentials in one place. 
+        No more forgetting usernames or resetting passwords — LogBook remembers them for you, so you can access your favorite sites effortlessly and securely.
+        ust add your website name, username, and password — LogBook takes care of the rest. 
+        a clean and intuitive interface, you can quickly search, view, and manage all your credentials. 
+        Say goodbye to messy notes and insecure storage methods — everything you need is now in one safe space.</p>
+
+        <p>💡 Why Choose LogBook?</p>
+
+        <p>In a world filled with countless online accounts, keeping track of multiple passwords can be challenging. 
+        LogBook provides a smart solution by encrypting and storing your login details in an organized, easy-to-access way. 
+        It’s built with user privacy and simplicity at its core, ensuring that your information stays protected while remaining easily retrievable when needed.</p>
+
+    </body>
+    <footer>
+        &copy  2025 LogBook. All rights reserved.
+    </footer>
+</html>
