@@ -1,6 +1,6 @@
 const form = document.getElementById('logForm');
 const logsDiv = document.getElementById('logs');
-const apiUrl = "http://127.0.0.1:8000/logs"; // FastAPI backend URL
+const apiUrl = "/logs"; // FastAPI backend URL
 const CURRENT_USER = localStorage.getItem('user_id');
 const user_id = CURRENT_USER ? CURRENT_USER : "default_user";
 
